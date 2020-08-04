@@ -3,4 +3,4 @@ project(printing C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(printing main.c)
+add_executable(caesarC main.c)
