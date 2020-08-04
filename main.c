@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
+
 int main() {
 
     int a = -1;
-    while (a<0){
+    while (a<=0){
         printf("enter shift amount: ");
-        scanf("%d", &a);
+        char temp[100];
+        char * p;
+        fgets(temp, 99, stdin);
+        a = strtol(temp, &p,10);
     }
     getchar();
     char cipherText[100] = {' ',' ',' ',' ',' ',' ',' ',' ',' ',};
